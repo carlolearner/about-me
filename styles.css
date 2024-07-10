@@ -1,7 +1,18 @@
-body {
+body,
+html {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #introduction {
@@ -27,16 +38,6 @@ body {
   font-optical-sizing: auto;
   font-size: 3vw;
   font-style: normal;
-}
-
-@media (max-width: 991.98px) {
-  #introduction {
-    background-size: 800px auto; /* Ensures the image maintains a specific width */
-  }
-  .title-text {
-    top: 35%;
-    font-size: 24px; /* Fixed font size for smaller screens */
-  }
 }
 
 #summary {
@@ -218,4 +219,24 @@ footer {
   background-color: #4a249d;
   font-family: "Fira Code", monospace;
   color: white;
+}
+
+@media (max-width: 991.98px) {
+  #introduction {
+    background-size: 800px auto; /* Ensures the image maintains a specific width */
+  }
+  .title-text {
+    top: 35%;
+    font-size: 24px; /* Fixed font size for smaller screens */
+  }
+
+  .bfm,
+  .cebsi,
+  .capstone,
+  .progweb,
+  .db,
+  .net,
+  .is {
+    margin-left: 50px;
+  }
 }
