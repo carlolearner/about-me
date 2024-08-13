@@ -1,0 +1,277 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#introduction {
+  background-image: url("images/computer.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  background-color: #e74c3c;
+}
+
+.title-text {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-size: 3vw;
+  font-style: normal;
+}
+
+#summary {
+  text-align: center;
+  background-color: #36ba98;
+  padding-bottom: 100px;
+}
+
+#summary > img {
+  margin-top: 100px;
+  border-radius: 50%;
+  height: 300px;
+}
+
+#summary > p {
+  margin-top: 50px;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+}
+
+#experience,
+#projects,
+#education,
+#skills,
+#contact {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 50px;
+  background-color: #e9c46a;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-bottom: 100px;
+}
+
+#experience > h2,
+#projects > h2,
+#education > h2,
+#skills > h2 {
+  text-align: left;
+  margin-left: 80px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#education > h2 {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.experience-item,
+.projects-item,
+.projects-item1,
+.projects-item2,
+.education-item,
+.skills-item,
+.skills-item1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skills-item1,
+.projects-item1,
+.projects-item2 {
+  margin-top: 100px;
+}
+
+.bfm,
+.cebsi,
+.capstone,
+.simon,
+.drums,
+.dice,
+.motivational-meme,
+.mondrian,
+.progweb,
+.db,
+.net,
+.is {
+  margin-left: 100px;
+}
+
+.cebsi {
+  margin-right: 100px;
+}
+
+.bfm,
+.cebsi,
+.capstone,
+.simon,
+.drums,
+.dice,
+.motivational-meme,
+.mondrian,
+.neu,
+.ama,
+.fcpc,
+.icon-skill,
+.progweb,
+.net,
+.db,
+.is {
+  flex: 1;
+  min-width: 300px;
+}
+
+.bfm > h3,
+.cebsi > h3,
+.capstone > h3,
+.simon > h3,
+.drums > h3,
+.dice > h3,
+.motivational-meme > h3,
+.mondrian > h3,
+.neu > h3,
+.ama > h3,
+.fcpc > h3 {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.neu > h3,
+.ama > h3,
+.fcpc > h3 {
+  text-align: center;
+  font-size: 38px;
+}
+
+.icon-skill {
+  text-align: left;
+}
+
+.bfm > h4,
+.cebsi > h4,
+.capstone > h4,
+.simon > h4,
+.drums > h4,
+.dice > h4,
+.motivational-meme > h4,
+.mondrian > h4,
+.neu > h4,
+.ama > h4,
+.fcpc > h4,
+.progweb > h4,
+.net > h4,
+.db > h4,
+.is > h4 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.neu > h4,
+.ama > h4,
+.fcpc > h4 {
+  text-align: center;
+}
+
+.bfm > p,
+.cebsi > p,
+.capstone > p,
+.simon > p,
+.drums > p,
+.dice > p,
+.motivational-meme > p,
+.mondrian > p,
+.neu > p,
+.ama > p,
+.fcpc > p,
+.progweb > p,
+.net > p,
+.db > p,
+.is > p,
+li {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.neu > p,
+.ama > p,
+.fcpc > p {
+  text-align: center;
+  font-size: 26px;
+}
+
+#projects {
+  background-color: #f4a261;
+}
+
+#education {
+  background-color: #fffae6;
+}
+
+#contact {
+  background-color: #009fbd;
+}
+
+footer {
+  background-color: #4a249d;
+  font-family: "Fira Code", monospace;
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  #introduction {
+    background-size: 800px auto; /* Ensures the image maintains a specific width */
+  }
+  .title-text {
+    top: 35%;
+    font-size: 24px; /* Fixed font size for smaller screens */
+  }
+
+  .bfm,
+  .cebsi,
+  .capstone,
+  .simon,
+  .drums,
+  .dice,
+  .motivational-meme,
+  .mondrian,
+  .progweb,
+  .db,
+  .net,
+  .is {
+    margin-left: 50px;
+  }
+}
